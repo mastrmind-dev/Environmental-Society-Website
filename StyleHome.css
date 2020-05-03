@@ -1,0 +1,440 @@
+@font-face {
+    font-family: bungee;
+    src: url(Bungee-Regular.otf);
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/******************************* Nav Bar *******************************/
+.navbar{
+    z-index: 10;
+    background-size: auto;
+    background: rgba(0, 0, 0, .5);
+}
+.navbar-brand span{
+    color: #f5bb00;
+}
+.btn-outline-warning{
+    border-width: 1px;
+}
+.my-nav .nav-link{
+    color: aliceblue;
+}
+.my-nav .active-link{
+    background: #f5bb00;
+    border-radius: 50px;
+    display: table-cell;
+}
+.my-nav .active-link:hover{
+    background: transparent;
+    color: #f5bb00;
+}
+.my-nav .nav-link:hover{
+    color: #f5bb00;
+}
+.my-nav .navbar-brand{
+    color: aliceblue;
+    font-size: 2.2em;
+    font-weight: bolder;
+}
+.navbar-toggler-icon{color: aliceblue;}
+.form-control{
+    background: rgba(0,0,0,0.3);
+    border-color: #f5bb00;
+    border-width: 1px;
+}
+/******************************* /Nav Bar *******************************/
+
+/******************************* Video Header Section *******************************/
+.video-header{
+    height: 50em;
+     display: flex;
+     align-items: center;
+     color: #fff;
+}
+.video-header span{
+    color: #f5bb00;
+}
+.video-header h1{
+    font-weight: bolder;
+    font-size: 4rem !important;
+}
+.video-header p{
+    font-weight: bolder;
+    font-size: 1.5rem !important;
+}
+.wrap{
+max-width: 960px;
+padding-left: 1rem;
+padding-right: 1rem;
+text-align: center;
+
+}
+.fullscreen-video-wrap{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+overflow: hidden;
+
+}
+.fullscreen-video-wrap video{
+
+min-width: 100%;
+
+}
+
+.header-overlay{ 
+height: 100vh;
+width: 100vw;
+position: absolute;
+top: 0;
+left: 0;
+
+}
+
+.header-content{
+z-index: 2;
+margin-top:20%;
+padding: 0 5rem;
+
+}
+
+.header-content h1{
+font-size: 50px;
+margin-bottom: 0;
+
+}
+.header-content p{
+font-size: 1.5rem;
+display: block;
+padding-bottom: 2rem;
+margin-top: 10px;
+}
+
+.my-btn{
+background: transparent;
+border-radius: 50px;
+font-weight: 700;
+border-width: 3px;
+}
+
+@media(max-width:768px){
+.header-content h1{font-size: 40px;}
+.header-content p{font-size: 1rem;}
+video, .video-header, .header-overlay{
+    height: 400px;
+    }
+}
+/******************************* /Video Header Section *******************************/
+
+/***************************** Message Section *********************************/
+.message{
+text-align: center;
+margin: 0;
+}
+.message-box{
+    border-radius: 30px;
+    padding: 5%;
+}
+@media only screen and (min-width:1442px) and (max-width:1680px){
+    .video-header{
+        height: 60em;
+    }
+}
+@media only screen and (min-width:1681px){
+    .video-header{
+        height: 70em;
+    }
+}
+/***************************** /Message Section *********************************/
+
+/***************************** Banner Section *********************************/
+.banner{
+    background-image: url(img/forest_background.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 17%;
+    padding-bottom: 17%;
+}
+.banner-highlights{
+    padding: 10px 0 30px;
+    background: rgba(0,0,0,0.7);
+    text-align: center;
+    color: #fff;
+}
+.paralbanner-txt{
+    line-height: 3em;
+    position: relative;
+    font-size: 160%;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.paralbanner-txt h1 span{
+    color: red;
+}
+.paralbanner-txt i{
+    font-size: 65px;
+}
+.paralbanner-txt a{
+    color: rgb(13, 250, 13);
+}
+.paralbanner-txt a:hover{
+    color: yellow;
+}
+.paralbanner-txt p{
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: -20px;
+    font-weight: 600;
+}
+.paral-btn{
+    width: 33%;
+    float: left;
+    position: relative;
+}
+.learn-btn{
+    width: 30%;
+    padding: 8px 0;
+    outline: none !important;
+    border: 2px solid rgb(250, 167, 13);
+    border-radius: 50px;
+    background: transparent;
+    color: #fff;
+    position: relative;
+    left: 100%;
+    bottom: 20px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.learn-btn:hover{
+    background: rgb(250, 167, 13);
+}
+/***************************** /Banner Section *********************************/
+
+/***************************** Gallery Section *********************************/
+.gallery h1{
+    color: aqua;
+    font-family: bungee;
+    padding-top: 5%;
+}
+.background-gallery{
+    background-image: linear-gradient(to right top, #c3e71a, #14cd6a, #00a797, #007b9c, #004f76, #005076, #005177, #005277, #00819d, #00afa1, #4cda86, #d2fb5f);}
+.gallery h2{
+    padding: 3%;
+    color: rgb(117, 253, 6);
+}
+.gallery-box img{
+    border: 1px solid rgb(10, 238, 41);
+    width: 100%;
+    height: 14em;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+.gallery-box img:hover{
+    transform: scale(1.1);
+}
+.gallery-box h4{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    font-weight: bold;
+    color: #fff;
+    font-size: 2.5em;
+}
+.col-md-4{
+    margin-bottom: 2% !important;
+}
+/***************************** /Gallery Section *********************************/
+
+/***************************** Founder Section *********************************/
+.founder-section{
+    margin: 5%;
+}
+.founder-section h2{
+    font-family: bungee;
+}
+.founder-section .founder{
+    width: 80%;
+}
+.founder-section .founder p span{
+    font-weight: bold;
+}
+.founder-section .founder h4{
+    margin-top: 6%;
+}
+.founder-section .founder h6{
+    margin-top: 4%;
+    
+}
+.founder-section .founder p{
+    padding: 4%;
+}
+/***************************** /Founder Section *********************************/
+
+/***************************** Footer Section *********************************/
+.footer-distributed{
+	background: rgb(22, 23, 24);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 30px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    ;
+    margin: 0;
+    font-size: 36px;
+}
+
+.footer-distributed h3 span{
+	color:  #f5bb00;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+.footer-distributed .footer-links span{
+    color: #f5bb00;
+}
+.footer-links a:hover{
+    color: #f5bb00;
+}
+
+.footer-distributed .footer-company-name{
+    color: rgb(241, 8, 8);
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center img{
+    height: 23px;
+    width: 23px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 16px;
+	font-weight: 600;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+.footer-distributed .footer-icons img{
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+}
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 5px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+    margin-bottom: 5px;
+}
+/***************************** /Footer Section *********************************/
