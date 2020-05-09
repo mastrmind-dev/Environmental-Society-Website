@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1rem;
     line-height: 1.5rem;
     color: #333;
@@ -45,3 +45,52 @@ body{
     border-width: 1px;
 }
 /******************************* /Nav Bar *******************************/
+
+/******************************** About us Section *****************************/
+.about-us{
+    background-image: url(img/blueworkdblur.png);
+    background-size: cover;
+    width: 100%;
+}
+.big-box{
+    width: 80%;
+    margin: 10%;
+    background: white;
+    box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.8);
+}
+.left-box{
+    background-image: url(img/blueworkd.jpg);
+    background-size: cover;
+}
+
+.left-box h1{
+    opacity: .3;
+    font-size: 4em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 2%;
+}
+.left-box p{
+    color: transparent;
+}
+.right-box{
+    padding: 2%;
+    text-align: justify;
+}
+.right-box span{
+    font-size: 2em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+button{
+    border-radius: 50px;
+    border-color: #f5bb00;
+    border-width: 5px;
+}
+button:hover{
+    background-color: yellow;
+}
+.right-box .s{
+    font-size: 1.5em;
+    color: #f5bb00;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/******************************** /About us Section *****************************/
