@@ -28,6 +28,9 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: bold;
 }
+.btn-bottom{
+  margin: 4%;
+}
 /****************************** /Topic Section *******************************/
 .navbar{
   z-index: 10;
