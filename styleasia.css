@@ -1,136 +1,128 @@
-* {
-    box-sizing: border-box;
-  }
-  body{
+body{
     margin: 0;
+    padding: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1rem;
     line-height: 1.5rem;
-    color: #333;
     overflow-x: hidden;
 }
-/******************************* Nav Bar *******************************/
 
 /****************************** Topic Section *******************************/
 .topic{
-  margin-top: 3%;
-  text-align: center;
-}
-.button{
-  border-radius: 50px;
-  border-width: 5px;
-  background-color: #f5bb00;
-  margin: 2%;
-  padding: 1%;
-}
-.topic h1{
-  color: darkgreen;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-weight: bold;
-}
-.btn-bottom{
-  margin: 4%;
-}
+    margin-top: 3%;
+    text-align: center;
+  }
+  .button{
+    border-radius: 50px;
+    border-width: 5px;
+    background-color: #f5bb00;
+    margin: 2%;
+    padding: 1%;
+  }
+  .topic h1{
+    color: darkgreen;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+  }
+  .btn-bottom{
+    margin: 4%;
+  }
 /****************************** /Topic Section *******************************/
+
+/******************************* Nav Bar *******************************/
 .navbar{
-  z-index: 10;
-  background-size: auto;
-  background: rgba(0, 0, 0, .5);
-}
-.navbar-brand span{
-  color: #f5bb00;
-}
-.btn-outline-warning{
-  border-width: 1px;
-}
-.my-nav .nav-link{
-  color: aliceblue;
-}
-.my-nav .active-link{
-  background: #f5bb00;
-  border-radius: 50px;
-  display: table-cell;
-}
-.my-nav .active-link:hover{
-  background: transparent;
-  color: #f5bb00;
-}
-.my-nav .nav-link:hover{
-  color: #f5bb00;
-}
-.my-nav .navbar-brand{
-  color: aliceblue;
-  font-size: 2.2em;
-  font-weight: bolder;
-}
-.navbar-toggler-icon{color: aliceblue;}
-.form-control{
-  background: rgba(0,0,0,0.3);
-  border-color: #f5bb00;
-  border-width: 1px;
-}
+    z-index: 10;
+    background-size: auto;
+    background: rgba(0, 0, 0, .5);
+  }
+  .navbar-brand span{
+    color: #f5bb00;
+  }
+  .btn-outline-warning{
+    border-width: 1px;
+  }
+  .my-nav .nav-link{
+    color: aliceblue;
+  }
+  .my-nav .active-link{
+    background: #f5bb00;
+    border-radius: 50px;
+    display: table-cell;
+  }
+  .my-nav .active-link:hover{
+    background: transparent;
+    color: #f5bb00;
+  }
+  .my-nav .nav-link:hover{
+    color: #f5bb00;
+  }
+  .my-nav .navbar-brand{
+    color: aliceblue;
+    font-size: 2.2em;
+    font-weight: bolder;
+  }
+  .navbar-toggler-icon{color: aliceblue;}
+  .form-control{
+    background: rgba(0,0,0,0.3);
+    border-color: #f5bb00;
+    border-width: 1px;
+  }
 /******************************* /Nav Bar *******************************/
-  .row {
-    display: -ms-flexbox; /* IE 10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE 10 */
-    flex-wrap: wrap;
-    padding: 0 4px;
-  }
-  
-  /* Create two equal columns that sits next to each other */
-  .column {
-    -ms-flex: 33%; /* IE 10 */
-    flex: 33%;
-    padding: 0 4px;
-  }
-  
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-  }
-  .container {
+
+/******************************* Photo Grid Section *******************************/
+.container{
+    max-width: 100%;
+}
+.photo-row{
+    margin: -10px;
+    margin-top: 10px !important;
+}
+.col-sm{
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    vertical-align: middle !important;
+}
+.animal {
     position: relative;
-    width: 100%;
   }
-  
   .image {
     display: block;
     width: 100%;
     height: auto;
-  }
+    margin-top: 8px;
+}
   
   .overlay {
     position: absolute;
     bottom: 100%;
-    background-color: #000000;
-    overflow-y: auto;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.8);
     overflow-x: hidden;
+    overflow-y: auto;
     width: 100%;
     height:0;
     transition: .5s ease;
-    
   }
-  .container:hover .overlay {
-      bottom: 0;
-      height: 100%;
-      opacity: 0.8;
+  
+  .animal:hover .overlay {
+    bottom: 0;
+    height: 100%;
   }
-  .text{
-    width: 80%;
-    right: 10%;
-    left: 10%;
-    position: relative;
-    text-align: center;
-  }
-  .text h4{
-    color: yellow;
-    font-size: 1.5em;
-  }
-  .text p{
+  
+  .text {
     color: white;
-    font-size: 1em;
+    position: absolute;
+    text-align: center;
+    padding: 8px;
   }
+.bottom-button{
+    margin: 1%;
+    margin-top: 2% !important;
+}
+/******************************* /Photo Grid Section *******************************/
 
 /***************************** Footer Section *********************************/
 .footer-distributed{
