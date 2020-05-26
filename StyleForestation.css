@@ -1,0 +1,263 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    overflow-x: hidden;
+}
+/******************************* Nav Bar *******************************/
+.navbar{
+    z-index: 10;
+    background-size: auto;
+    background: rgba(0, 0, 0, .5);
+  }
+  .navbar-brand span{
+    color: #f5bb00;
+  }
+  .btn-outline-warning{
+    border-width: 1px;
+  }
+  .my-nav .nav-link{
+    color: aliceblue;
+  }
+  .my-nav .active-link{
+    background: #f5bb00;
+    border-radius: 50px;
+    display: table-cell;
+  }
+  .my-nav .active-link:hover{
+    background: transparent;
+    color: #f5bb00;
+  }
+  .my-nav .nav-link:hover{
+    color: #f5bb00;
+  }
+  .my-nav .navbar-brand{
+    color: aliceblue;
+    font-size: 2.2em;
+    font-weight: bolder;
+  }
+  .navbar-toggler-icon{color: aliceblue;}
+  .form-control{
+    background: rgba(0,0,0,0.3);
+    border-color: #f5bb00;
+    border-width: 1px;
+  }
+/******************************* /Nav Bar *******************************/
+
+/******************************* Forestation Section ********************************/
+.forestation{
+    width: 98%;
+    position: relative;
+    margin: 20px auto;
+    text-align: justify;
+    border-style: outset;
+    border-radius: 10px;
+    border-color: green;
+    border-width: 10px;
+}
+.forestation p{
+    font-weight: bolder;
+    margin: 20px;
+}
+.forest-parag{
+    clip-path: circle(50%);
+    width: 380px;
+    height: 380px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.85);
+}
+.forest-parag img{
+    width: 380px;
+    height: 380px;
+    object-fit: cover;
+    opacity: .4;
+}
+@media(max-width:768px){
+    .forest-parag{
+        clip-path: circle(50%);
+        width: 580px;
+        height: 580px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.85);
+    }
+    .forest-parag img{
+        width: 580px;
+        height: 580px;
+        object-fit: cover;
+        opacity: .4;
+    }   
+}
+/****************************** /Forestation Section ********************************/
+
+/****************************** Table Section ********************************/
+.container{
+    margin: 0, 10%, 0, 10%;    
+}
+.content-table{
+    border-collapse: collapse;
+
+}
+/****************************** /Table Section ********************************/
+
+/***************************** Footer Section *********************************/
+.footer-distributed{
+	background: rgb(22, 23, 24);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 30px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    ;
+    margin: 0;
+    font-size: 36px;
+}
+
+.footer-distributed h3 span{
+	color:  #f5bb00;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+.footer-distributed .footer-links span{
+    color: #f5bb00;
+}
+.footer-links a:hover{
+    color: #f5bb00;
+}
+
+.footer-distributed .footer-company-name{
+    color: rgb(241, 8, 8);
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center img{
+    height: 23px;
+    width: 23px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 16px;
+	font-weight: 600;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+.footer-distributed .footer-icons img{
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+}
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 5px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+    margin-bottom: 5px;
+}
+/***************************** /Footer Section *********************************/
