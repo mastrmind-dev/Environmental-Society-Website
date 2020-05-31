@@ -4,13 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css"> -->
-    <!-- <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="StyleForestation.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <!-- <link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/all.css"> -->
+    <link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/all.css">
     <title>Gallery-Saveworld</title>
     <link rel="icon" type="image/ico" href="img/logo1.jpeg">
 </head>
@@ -31,10 +28,10 @@
           <a class="nav-link" href="#">Events</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Forestation</a>
+          <a class="nav-link active-link" href="#">Forestation</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active-link" href="#">Gallery</a>
+          <a class="nav-link" href="#">Gallery</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">About Us</a>
@@ -81,40 +78,83 @@
 
 <!-- *************************** Table Section ***************************** -->
 <div class="table container">
-    <h1>Table Name</h1>
-    <table class="content-table">
-        <thead>
-            <tr>
-                <th>Rank</th>
-                <th>Name</th>
-                <th>Points</th>
-                <th>Team</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Domenic</td>
-                <td>88, 110</td>
-                <td>dcode</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Domenic</td>
-                <td>88, 110</td>
-                <td>dcode</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Domenic</td>
-                <td>88, 110</td>
-                <td>dcode</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="row">
+      <div class="col-sm">
+        <h1>Threats to Forests</h1>
+      <table class="content-table">
+          <thead>
+              <tr>
+                  <th>Causes</th>
+                  <th>Effects</th>
+                  <th>Solutions</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Over Population</td>
+                  <td>Pollution</td>
+                  <td>Reforestation</td>
+              </tr>
+              <tr>
+                  <td>Urbanization</td>
+                  <td>Flooding</td>
+                  <td>Forest Management</td>
+              </tr>
+              <tr>
+                  <td>Mining</td>
+                  <td>Soil Erosion</td>
+                  <td>Laws Implementation</td>
+              </tr>
+              <tr>
+                  <td>Agriculture Activity</td>
+                  <td>Animal Habitat</td>
+                  <td>Creating Awareness</td>
+              </tr>
+              <tr>
+                  <td>Other</td>
+                  <td>Greenery</td>
+                  <td>Penalties</td>
+              </tr>
+          </tbody>
+      </table>
+      </div>
+    </div>
 </div>
 <!-- *************************** Table Section ***************************** -->
-
+<div class="container list">
+  <div class="row">
+    <div class="col-sm plants">
+      <h1>Forest Plants In Sri Lanka</h1>
+      <ul class="ulist">
+        <li style="list-style: none;" id="topItem">☆Kubuk-Arjun Tree</li>
+        <li style="list-style: none;" id="topItem">☆Mee-Mousey Mi Tree</li>
+        <li style="list-style: none;" id="topItem">☆Kohomba-Neem/Margosa</li>
+        <li style="list-style: none;" id="topItem">☆Ehela-Shower of Gold</li>
+        <li style="list-style: none;" id="topItem">☆Buruta-Ceylon Stain Wood</li>
+        <li style="list-style: none;" id="topItem">☆Koan-Ceylon Oak</li>
+        <li style="list-style: none;" id="topItem">☆Halmilla-Trincomalee Wood</li>
+        <li style="list-style: none;" id="topItem">☆Kaluwara-Ebony</li>
+        <li style="list-style: none;" id="topItem">☆Etteriya-Orange Jasmin</li>
+        <li style="list-style: none;" class="fig" id="topItem">☆Attikka-Cluster Fig</li>
+      </ul>
+    </div>
+    <div class="col-sm">
+      <h1 title="Top 7 countries with largest forest coverage as a percentage and forest coverage of Sri Lanka">Forest Coverage In Sri Lanka</h1>
+      <ol class="olist" start="0">
+        <li style="list-style:square;" id="topItem">Sri Lanka (29.9%)</li>
+        <li id="topItem">Northern (55.4%)</li>
+        <li id="topItem">North Central (45.6%)</li>
+        <li id="topItem">Eastern (38.5%)</li>
+        <li id="topItem">Uva (36.3%)</li>
+        <li id="topItem">Central (31.7%)</li>
+        <li id="topItem">Southern (23.3%)</li>
+        <li id="topItem">North Western (18.3%)</li>
+        <li id="topItem">Sabaragamuwa (17.7%)</li>
+        <li id="topItem" class="fig">Western (7.1%)</li>
+      </ol>
+    </div>
+  </div>
+</div>
 <!-- ********************* Footer Section ********************** -->
 <section class="footer">
     <footer class="footer-distributed">
@@ -127,11 +167,11 @@
       <p class="footer-links">
           <a href="index.html" class="link-1">Home</a>
           
-          <a href="index.html#link-banner">Forestation</a>
+          <a href="index.html#link-banner"><span>Forestation</span></a>
       
           <a href="indexevents.html">Events</a>
       
-          <a href="index.html#link-gallery"><span>Gallery</span></a>
+          <a href="index.html#link-gallery">Gallery</a>
           
           <a href="#">About Us</a>
           

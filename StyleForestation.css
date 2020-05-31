@@ -1,3 +1,7 @@
+@font-face {
+  font-family: bungee;
+  src: url(Bungee-Regular.otf);
+}
 body{
     margin: 0;
     padding: 0;
@@ -10,7 +14,7 @@ body{
 .navbar{
     z-index: 10;
     background-size: auto;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, 1);
   }
   .navbar-brand span{
     color: #f5bb00;
@@ -50,7 +54,7 @@ body{
 .forestation{
     width: 98%;
     position: relative;
-    margin: 20px auto;
+    margin: 5% auto;
     text-align: justify;
     border-style: outset;
     border-radius: 10px;
@@ -96,14 +100,57 @@ body{
 /****************************** /Forestation Section ********************************/
 
 /****************************** Table Section ********************************/
-.container{
-    margin: 0, 10%, 0, 10%;    
+.table{
+  margin-top: 5%!important;
+  margin-bottom: 5%!important;
 }
-.content-table{
-    border-collapse: collapse;
-
+h1{
+  text-align: center;
+  font-family: bungee;
+}
+.content-table thead{
+  background: #009879;
+  color: white;
+}
+.content-table tbody tr:hover{
+  background-color: lawngreen;
+}
+table tr td{
+  width: 250px;
+}
+table{
+  text-align: center;    
+  border: 5px solid darkgreen;
+  margin-left: auto;
+  margin-right: auto;
 }
 /****************************** /Table Section ********************************/
+
+/****************************** List *********************************/
+#topItem{
+  border-top: 2px solid rgb(26, 243, 26);
+}
+.fig{
+  border-bottom: 2px solid rgb(26, 243, 26);;
+}
+.ulist li{
+   padding: 5px;
+   margin-left: auto;
+   margin-right: auto;
+ }
+ .ulist li:hover{
+  background: greenyellow;
+ }
+
+.olist li{
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.olist li:hover{
+ background: greenyellow;
+}
+/****************************** /List *********************************/
 
 /***************************** Footer Section *********************************/
 .footer-distributed{
@@ -113,7 +160,8 @@ body{
 	width: 100%;
 	text-align: left;
 	font: bold 16px sans-serif;
-	padding: 30px 50px;
+  padding: 30px 50px;
+  margin-top: 5%;
 }
 
 .footer-distributed .footer-left,
